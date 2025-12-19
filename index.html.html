@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apna CSC Service Center | Digital India</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <style>
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Poppins,Arial,sans-serif;background:#f4f6fb;color:#222}
+    header{background:linear-gradient(135deg,#ff9933,#fff,#138808);padding:20px;text-align:center}
+    header h1{margin:0;font-size:34px}
+    header p{margin:6px 0;font-size:16px}
+
+    nav{background:#0f172a;color:#fff;display:flex;justify-content:center;gap:20px;padding:12px;flex-wrap:wrap}
+    nav a{color:#fff;text-decoration:none;font-weight:500}
+    nav a:hover{text-decoration:underline}
+
+    .banner{padding:70px 20px;text-align:center;color:#fff}
+    .b1{background:linear-gradient(120deg,#1e3c72,#2a5298)}
+    .b2{background:linear-gradient(120deg,#11998e,#38ef7d)}
+    .b3{background:linear-gradient(120deg,#ff512f,#f09819)}
+    .b4{background:linear-gradient(120deg,#141e30,#243b55)}
+    .banner h2{font-size:30px;margin-bottom:10px}
+    .banner p{font-size:18px}
+
+    .container{padding:40px 20px;max-width:1200px;margin:auto}
+    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+    .card{background:#fff;border-radius:16px;padding:22px;box-shadow:0 8px 20px rgba(0,0,0,.08)}
+    .card h3{margin-top:0;color:#1d4ed8}
+    .card a{display:inline-block;margin-top:10px;background:#25D366;color:#fff;padding:8px 14px;border-radius:30px;text-decoration:none;font-size:14px}
+
+    .about{background:#fff;border-radius:16px;padding:30px;box-shadow:0 8px 20px rgba(0,0,0,.08)}
+
+    .form-box{background:#fff;border-radius:16px;padding:30px;box-shadow:0 8px 20px rgba(0,0,0,.08)}
+    .form-box input,.form-box textarea{width:100%;padding:12px;margin:10px 0;border-radius:8px;border:1px solid #ccc}
+    .form-box button{background:#1d4ed8;color:#fff;border:none;padding:12px 20px;border-radius:30px;font-size:16px;cursor:pointer}
+
+    footer{background:#020617;color:#fff;text-align:center;padding:22px;margin-top:40px}
+
+    .whatsapp{position:fixed;right:20px;bottom:20px;background:#25D366;color:#fff;padding:15px 22px;border-radius:50px;text-decoration:none;font-weight:600;box-shadow:0 8px 20px rgba(0,0,0,.35)}
+  </style>
+<script>
+function setLang(lang){
+  document.querySelectorAll('[data-hi]').forEach(el=>{
+    el.innerText = (lang==='hi') ? el.getAttribute('data-hi') : el.getAttribute('data-en');
+  });
+}
+</script>
+</head>
+<body>
+
+<header>
+  <img src="logo-csc.png" alt="CSC Logo" style="height:80px"><br>
+  <h1 data-hi="अपना CSC सेवा केंद्र" data-en="Apna CSC Service Center">अपना CSC सेवा केंद्र</h1>
+  <p data-hi="Government Approved | Digital India Initiative" data-en="Government Approved | Digital India Initiative">Government Approved | Digital India Initiative</p>
+</header>
+
+<nav>
+  <a href="#services">Services</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+  <a href="#" onclick="setLang('hi')">हिंदी</a>
+  <a href="#" onclick="setLang('en')">English</a>
+</nav>
+
+<section class="banner b1">
+  <h2 data-hi="सभी CSC सेवाएं एक ही जगह" data-en="All CSC Services at One Place">सभी CSC सेवाएं एक ही जगह</h2>
+  <p data-hi="सरकारी और डिजिटल सेवाओं का भरोसेमंद केंद्र" data-en="Trusted Government & Digital Services Center">सरकारी और डिजिटल सेवाओं का भरोसेमंद केंद्र</p>
+</section>
+<section class="banner b2">
+  <h2>Direct WhatsApp Support</h2>
+  <p>एक क्लिक में सेवा के लिए संपर्क करें</p>
+</section>
+<section class="banner b3">
+  <h2>Fast • Secure • Trusted</h2>
+  <p>आपके दस्तावेज़, हमारी जिम्मेदारी</p>
+</section>
+<section class="banner b4">
+  <h2>CSC – Digital India</h2>
+  <p>Government to Citizen Services</p>
+</section>
+
+<div class="container" id="services">
+  <h2>CSC द्वारा दी जाने वाली सेवाएं</h2>
+  <div class="services">
+    <div class="card"><h3>Aadhaar Services</h3><p>Update, Linking, Status</p><a href="https://wa.me/918423768435">WhatsApp</a></div>
+    <div class="card"><h3>PAN Card</h3><p>New PAN, Correction</p><a href="https://wa.me/918423768435">WhatsApp</a></div>
+    <div class="card"><h3>Income / Caste Certificate</h3><p>Online Apply</p><a href="https://wa.me/918423768435">WhatsApp</a></div>
+    <div class="card"><h3>Banking & AEPS</h3><p>Money Transfer, Withdrawal</p><a href="https://wa.me/918423768435">WhatsApp</a></div>
+    <div class="card"><h3>Government Forms</h3><p>All Online Applications</p><a href="https://wa.me/918423768435">WhatsApp</a></div>
+    <div class="card"><h3>Bill Payments</h3><p>Electricity, Mobile, DTH</p><a href="https://wa.me/918423768435">WhatsApp</a></div>
+  </div>
+</div>
+
+<div class="container" id="about">
+  <h2>About Operator</h2>
+  <div class="about">
+    <p><strong>Name:</strong> Shiva</p>
+    <p><strong>Qualification:</strong> B.A. Hindi (Hons), Ramjas College, Delhi University</p>
+    <p><strong>Email:</strong> helpapna13@gmail.com</p>
+    <p><strong>Mobile:</strong> 8423768435</p>
+    <p>मैं सभी CSC सेवाएं ईमानदारी, पारदर्शिता और तेज़ी से उपलब्ध कराता हूँ।</p>
+  </div>
+</div>
+
+<div class="container" id="contact">
+  <h2>Customer Enquiry</h2>
+  <div class="form-box">
+    <p>नीचे विवरण भरें या सीधे WhatsApp करें</p>
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://wa.me/918423768435" alt="WhatsApp QR" />
+    <br><br>
+    <button onclick="window.location.href='https://wa.me/918423768435'">Chat on WhatsApp</button>
+    <h3 style="margin-top:30px">Our Location</h3>
+    <iframe src="https://www.google.com/maps?q=Ramjas%20College%20Delhi&output=embed" width="100%" height="250" style="border:0;border-radius:12px" loading="lazy"></iframe>
+  </div>
+</div>
+
+<div class="container" id="posters">
+  <h2 data-hi="CSC पोस्टर एवं फ्लेक्स" data-en="CSC Posters & Flex">CSC पोस्टर एवं फ्लेक्स</h2>
+  <p data-hi="नीचे दिए गए डिज़ाइन प्रिंट-रेडी (4K) हैं" data-en="Below designs are print-ready (4K)">नीचे दिए गए डिज़ाइन प्रिंट-रेडी (4K) हैं</p>
+  <div class="services">
+    <div class="card"><h3>Flex Banner 3×2 ft</h3><img src="flex-3x2.png" style="width:100%"></div>
+    <div class="card"><h3>Flex Banner 4×2 ft</h3><img src="flex-4x2.png" style="width:100%"></div>
+    <div class="card"><h3>Poster A3</h3><img src="poster-a3.png" style="width:100%"></div>
+    <div class="card"><h3>Poster A2</h3><img src="poster-a2.png" style="width:100%"></div>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 Apna CSC Service Center | Digital India</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/918423768435" target="_blank">Chat on WhatsApp</a>
+
+</body>
+</html>
